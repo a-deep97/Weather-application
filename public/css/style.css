@@ -1,0 +1,125 @@
+
+body{
+    background-color: white;
+}
+
+/* HEADER */
+header{
+    background-color:brown;
+    height: 30px;
+}
+/* HEADLINE */
+#headline{
+    display: flex;
+    background-color: yellowgreen;
+    height: 80px;
+}
+#intro-container{
+    background-color: darkgreen;
+    width: 60%;
+    margin: 4px;
+}
+#search-container{
+    background-color: darkgreen;
+    width: 100%;
+    margin: 4px;
+}
+/* MAIN SECTION */
+#main-section{
+    background-color: gray;
+    height: 650px;
+    display: flex;
+}
+
+#main-container{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    width: 200%;
+    margin: 5px;
+}   
+#main-info-container{
+    background-color: crimson;
+    height: 200%;
+    display: flex;
+    flex-direction: column;
+}
+#name-date-container{
+    background-color: burlywood;
+    height: 50%;
+    margin: 5px;
+    display: flex;
+}
+#name-container{
+    background-color: yellowgreen;
+    display: flex;
+    margin: 2px;
+    padding: 5px 10px;
+    width: 100%;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+#date-container{
+    display: flex;
+    background-color: yellowgreen;
+    margin: 2px;
+    padding: 5px 5px;
+    width: 100%;
+    align-items: center;
+    font-size: 2rem;
+}
+#weather-summary-container{
+    display: flex;
+    background-color: violet;
+    height: 200%;
+    margin: 10px;
+    padding: 5px 5px;
+}
+#icon-container{
+    display: flex;
+    background-color: turquoise;
+    width: 70%;
+    margin: 10px;
+    padding: 60px 60px;
+}
+#icon-container img{
+    max-width: 100%;
+    max-height: 100%;
+}
+#weather-info-container{
+    display: flex;
+    flex-direction: column;
+    background-color: turquoise;
+    width: 100%;
+    margin: 10px;
+    padding: 5px 5px;
+}
+#temperature-container{
+    display: flex;
+    background-color: springgreen;
+    height: 100%;
+    margin: 2px;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px 20px;
+    font-size: 9rem;
+}
+#weather-description-container{
+    background-color: springgreen;
+    height: 70%;
+    margin: 2px;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 3rem;
+}
+#side-info-container{
+    background-color: chocolate;
+    width: 100%;
+    margin: 5px;
+    padding: 10px 10px;
+}
+/* FOOTER */
+footer{
+    background-color: black;
+}

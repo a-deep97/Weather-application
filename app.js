@@ -5,6 +5,14 @@ const request=require('request')
 
 app.set('view engine','ejs')
 
+
+app.use(express.static('public'))
+app.use('/css',express.static(__dirname+'public/css'))
+app.use('/img',express.static(__dirname+'public/img'))
+
+
+
+
 var city='delhi'
 var url= `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=271d1234d3f497eed5b1d80a07b3fcd1`;
 
