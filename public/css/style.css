@@ -20,9 +20,34 @@ header{
     margin: 4px;
 }
 #search-container{
+    display: flex;
     background-color: darkgreen;
     width: 100%;
     margin: 4px;
+    padding: 3px 2px;
+    justify-content: flex-end;
+}
+#search-form{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin: 5px;
+    padding: 3px 3px;
+    width: 70%;
+}
+#search-bar{
+    background-color: black;
+    width: 100%;
+    margin: 3px;
+    padding: 2px 4px;
+    border-radius: 40px;
+    font-size: 150%;
+    text-align: left;
+}
+#search-button{
+    width: 30%;
+    margin: 3px;
+    border-radius: 5px;
 }
 /* MAIN SECTION */
 #main-section{
