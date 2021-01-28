@@ -178,19 +178,29 @@ header{
     height: 100%;
 }
 .side-info{
+    display: flex;
+    justify-content: center;
     background-color: crimson;
     width: 100%;
     margin: 2px;
 }
 .side-label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: darkgrey;
     width: 100%;
     margin: 3px;
+    font-size: 1.8rem;
 }
 .side-value{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: darkgray;
     width: 80%;
     margin: 3px;
+    font-size: 1.8rem;
 }
 /* FOOTER */
 footer{
