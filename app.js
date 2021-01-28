@@ -18,20 +18,29 @@ var url= `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperia
 
 app.get('/',(req,res)=>{
     
-    res.render('index');
-    /*
     request(url,(error,response,body)=>{
-        weather_json=JSON.parse(body)
-        console.log(weather_json.main.temp)
-
+        weather_json=JSON.parse(body);
         let weather ={
-            city: city,
+            city: weather_json.name,
+            country: weather_json.sys.country,
             temperature: Math.round(weather_json.main.temp),
+            min_temp:weather_json.main.temp_min,
+            max_temp:weather_json.main.temp_max,
+            feels_like: weather_json.main.feels_like,
+            humidity: weather_json.main.humidity,
+            pressure: weather_json.main.pressure,
+            visibility: weather_json.visibility,
+            sunrise: weather_json.sys.sunrise,
+            sunset: weather_json.sys.sunset,
+            wind_speed: weather_json.wind.speed,
+            wind_dir: weather_json.wind.deg,
+            timezone: weather_json.timezone,
             description: weather_json.weather[0].description,
             icon: weather_json.weather[0].icon
         }
+        console.log(weather);
+        res.render('index',{weather:weather});
     })
-    */
 })
 
 
