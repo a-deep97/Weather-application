@@ -20,6 +20,7 @@ app.get('/',(req,res)=>{
     
     request(url,(error,response,body)=>{
         weather_json=JSON.parse(body);
+        console.log(weather_json);
         let weather ={
             city: weather_json.name,
             country: weather_json.sys.country,

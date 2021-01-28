@@ -198,9 +198,9 @@ header{
     justify-content: center;
     align-items: center;
     background-color: darkgray;
-    width: 80%;
+    width: 100%;
     margin: 3px;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
 }
 /* FOOTER */
 footer{
