@@ -60,7 +60,7 @@ header{
     background-color: aqua;
     display: flex;
     flex-direction: column;
-    width: 200%;
+    width: 150%;
     margin: 5px;
 }   
 #main-info-container{
@@ -122,27 +122,75 @@ header{
 }
 #temperature-container{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: springgreen;
     height: 100%;
     margin: 2px;
-    justify-content: center;
-    align-items: flex-end;
     padding: 20px 20px;
+}
+#temperature{
+    display: flex;
+    background-color: tomato;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 2px;
     font-size: 9rem;
+}
+#min-max-temp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: tomato;
+    height: 30%;
+    width: 100%;
+    margin: 2px;
+    font-size: 2rem;
 }
 #weather-description-container{
     background-color: springgreen;
     height: 70%;
     margin: 2px;
-    padding: 5px 10px;
     text-align: center;
+    padding: 5px 10px;
     font-size: 3rem;
 }
-#side-info-container{
+#side-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: chocolate;
     width: 100%;
     margin: 5px;
-    padding: 10px 10px;
+    padding: 70px 10px;
+}
+.side-info-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: chartreuse;
+    padding: 5px 5px;
+    margin: 2px;
+    width: 70%;
+    height: 100%;
+}
+.side-info{
+    background-color: crimson;
+    width: 100%;
+    margin: 2px;
+}
+.side-label{
+    background-color: darkgrey;
+    width: 100%;
+    margin: 3px;
+}
+.side-value{
+    background-color: darkgray;
+    width: 80%;
+    margin: 3px;
 }
 /* FOOTER */
 footer{
