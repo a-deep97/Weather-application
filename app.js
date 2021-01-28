@@ -13,7 +13,7 @@ app.use('/img',express.static(__dirname+'public/img'))
 
 
 
-var city='new york'
+var city='gonda'
 var url= `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=271d1234d3f497eed5b1d80a07b3fcd1`;
 
 app.get('/',(req,res)=>{

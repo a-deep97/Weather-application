@@ -6,7 +6,7 @@ body{
 /* HEADER */
 header{
     background-color:brown;
-    height: 30px;
+    height: 10px;
 }
 /* HEADLINE */
 #headline{
@@ -15,9 +15,13 @@ header{
     height: 80px;
 }
 #intro-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: darkgreen;
     width: 60%;
     margin: 4px;
+    font-size: 3rem;
 }
 #search-container{
     display: flex;
