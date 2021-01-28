@@ -17,8 +17,12 @@
         <div id="main-container">
             <div id="main-info-container">
                 <div id="name-date-container">
-                    <div id="name-container">New Delhi , IN</div>
-                    <div id="date-container">wednesday | 28 january</div>
+                    <div id="name-container"><%= weather.city %> , <%= weather.country %> </div>
+                    <% let weekdays=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"] %> 
+                    <% let d=new Date() %>
+                    <% let weekday=weekdays[d.getDay()-1] %>
+                    <% let months=["January","February","March","April","May","June","July","August","September","October","November","December"] %> 
+                    <div id="date-container"><%= weekday %>  | <%= d.getDate() %> <%= months[d.getMonth()] %> |  <%= d.getFullYear() %>  </div>
                 </div>
                 <div id="weather-summary-container">
                     <div id="weather-info-container">
@@ -87,7 +91,7 @@
             <div id="container-7" class="side-info-container">
                 <div id="timezone" class="side-info">
                     <% let timeUTC=weather.timezone/3600 %>
-                    <% let sign=timeUTC>=0?'+':'-' %>  
+                    <% let sign=timeUTC>=0?'+':'' %>  
                     <div id="timezone-label" class="side-label">Time zone</div>
                     <div id="timezone-value" class="side-value"><%= sign %>  <%= timeUTC%> UTC</div>
                 </div>
