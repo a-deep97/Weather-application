@@ -26,14 +26,20 @@
                 </div>
                 <div id="weather-summary-container">
                     <div id="weather-info-container">
-                        <div id="temperature-container">
-                            <div id="temperature"><%= weather.temperature %> </div>
-                            <div id="min-max-temp"><%= weather.min_temp %> &#8451 | <%= weather.max_temp %> &#8451 </div>
+                        <div id="temperature-container"> 
+                            <div id="temperature">
+                                <div id="temp-value"><%= weather.temperature %></div>
+                                <div id="temp-unit">  &#8457</div>
+                            </div>
+                            <div id="min-max-temp"><%= weather.min_temp %> &#8457 | <%= weather.max_temp %> &#8457 </div>
+                        </div> 
+                        <div id="weather-description-container">
+                            <div id="weather-icon"><img src="http://openweathermap.org/img/w/<%= weather.icon %>.png" alt="Image"></div>
+                            <div id="weather-description"><%= weather.description %></div>
                         </div>
-                        <div id="weather-description-container"><%= weather.description %> </div>
                     </div>
-                    <div id="icon-container">
-                        <img src="./img/sunny-img.png" alt="">
+                    <div id="extra-container">
+                        
                     </div>
                 </div>
             </div>
@@ -42,7 +48,7 @@
             <div id="container-1" class="side-info-container">
                 <div id="feels-like" class="side-info">
                     <div id="feels-like-label" class="side-label">Feels like</div>
-                    <div id="feels-like-value" class="side-value"><%= weather.feels_like %>  &#8451</div>
+                    <div id="feels-like-value" class="side-value"><%= weather.feels_like %>  &#8457</div>
                 </div>
             </div>
             <div id="container-2" class="side-info-container">

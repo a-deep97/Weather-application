@@ -105,7 +105,7 @@ header{
     margin: 10px;
     padding: 5px 5px;
 }
-#icon-container{
+#extra-container{
     display: flex;
     background-color: turquoise;
     width: 70%;
@@ -136,12 +136,26 @@ header{
 #temperature{
     display: flex;
     background-color: tomato;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: center;
-    height: 100%;
     width: 100%;
     margin: 2px;
+}
+#temp-value{
+    display: flex;
+    justify-content:center;
+    background-color: chartreuse;
+    margin: 2px;
+    width: 100%;
     font-size: 9rem;
+}
+#temp-unit{
+    display: flex;
+    justify-content: flex-start;
+    background-color: chartreuse;
+    margin: 2px;
+    width: 60%;
+    font-size: 2rem;
 }
 #min-max-temp{
     display: flex;
@@ -154,12 +168,31 @@ header{
     font-size: 2rem;
 }
 #weather-description-container{
+    display: flex;
     background-color: springgreen;
     height: 70%;
     margin: 2px;
     text-align: center;
     padding: 5px 10px;
     font-size: 3rem;
+}
+#weather-icon{
+    display: flex;
+    background-color: darkkhaki;
+    justify-content: flex-end;
+    width: 60%;
+    margin: 3px;
+}
+#weather-icon img{
+    width: 50%;
+    height: 50%;
+}
+#weather-description{
+    display: flex;
+    background-color: darkkhaki;
+    width: 100%;
+    margin: 3px;
+    padding: 5px 5px;
 }
 #side-container{
     display: flex;
