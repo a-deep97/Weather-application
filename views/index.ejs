@@ -45,61 +45,63 @@
             </div>
         </div>
         <div id="side-container">
-            <div id="container-1" class="side-info-container">
-                <div id="feels-like" class="side-info">
-                    <div id="feels-like-label" class="side-label">Feels like</div>
-                    <div id="feels-like-value" class="side-value"><%= weather.feels_like %>  &#8457</div>
+            <div id="side-sub-container">
+                <div id="container-1" class="side-info-container">
+                    <div id="feels-like" class="side-info">
+                        <div id="feels-like-label" class="side-label">Feels like</div>
+                        <div id="feels-like-value" class="side-value"><%= weather.feels_like %>  &#8457</div>
+                    </div>
                 </div>
-            </div>
-            <div id="container-2" class="side-info-container">
-                <div id="humidity" class="side-info">
-                    <div id="humidity-label" class="side-label">Humidity</div>
-                    <div id="humidity-value" class="side-value"><%= weather.humidity %>  %</div>
+                <div id="container-2" class="side-info-container">
+                    <div id="humidity" class="side-info">
+                        <div id="humidity-label" class="side-label">Humidity</div>
+                        <div id="humidity-value" class="side-value"><%= weather.humidity %>  %</div>
+                    </div>
                 </div>
-            </div>
-            <div id="container-3" class="side-info-container">
-                <div id="pressure" class="side-info">
-                    <div id="pressure-label" class="side-label">Pressure</div>
-                    <div id="pressure-value" class="side-value"><%= weather.pressure %> hPa</div>
+                <div id="container-3" class="side-info-container">
+                    <div id="pressure" class="side-info">
+                        <div id="pressure-label" class="side-label">Pressure</div>
+                        <div id="pressure-value" class="side-value"><%= weather.pressure %> hPa</div>
+                    </div>
                 </div>
-            </div>
-            <div id="container-4" class="side-info-container">
-                <div id="wind-speed" class="side-info">
-                    <div id="wind-speed-label" class="side-label">Wind speed</div>
-                    <div id="wind-speed-value" class="side-value"><%= weather.wind_speed %> Kmph / <%= weather.wind_dir %> deg</div>
+                <div id="container-4" class="side-info-container">
+                    <div id="wind-speed" class="side-info">
+                        <div id="wind-speed-label" class="side-label">Wind speed</div>
+                        <div id="wind-speed-value" class="side-value"><%= weather.wind_speed %> Kmph / <%= weather.wind_dir %> deg</div>
+                    </div>
                 </div>
-            </div>
-            <div id="container-5" class="side-info-container">
-                <div id="visibility" class="side-info">
-                    <div id="visibility-label" class="side-label">Visibility</div>
-                    <div id="visibility-value" class="side-value"><%= weather.visibility %>  m</div>
+                <div id="container-5" class="side-info-container">
+                    <div id="visibility" class="side-info">
+                        <div id="visibility-label" class="side-label">Visibility</div>
+                        <div id="visibility-value" class="side-value"><%= weather.visibility %>  m</div>
+                    </div>
                 </div>
-            </div>
-            <div id="container-6" class="side-info-container">
-                <div id="sunrise" class="side-info">
-                    <% let dateObj1=new Date(weather.sunrise*1000) %>
-                    <% let hours1=dateObj1.getUTCHours().toString() %>
-                    <% let mins1=dateObj1.getUTCMinutes().toString() %>
-                    <% let secs1=dateObj1.getUTCSeconds().toString() %>
+                <div id="container-6" class="side-info-container">
+                    <div id="sunrise" class="side-info">
+                        <% let dateObj1=new Date(weather.sunrise*1000) %>
+                        <% let hours1=dateObj1.getUTCHours().toString() %>
+                        <% let mins1=dateObj1.getUTCMinutes().toString() %>
+                        <% let secs1=dateObj1.getUTCSeconds().toString() %>
 
-                    <% let dateObj2=new Date(weather.sunset*1000) %>
-                    <% let hours2=dateObj2.getUTCHours().toString() %>
-                    <% let mins2=dateObj2.getUTCMinutes().toString() %>
-                    <% let secs2=dateObj2.getUTCSeconds().toString() %>  
-                    <div id="sunrise-label" class="side-label">Sunrise</div>
-                    <div id="sunrise-value" class="side-value"><%= hours1 %>:<%= mins1 %>:<%= secs1 %></div>
+                        <% let dateObj2=new Date(weather.sunset*1000) %>
+                        <% let hours2=dateObj2.getUTCHours().toString() %>
+                        <% let mins2=dateObj2.getUTCMinutes().toString() %>
+                        <% let secs2=dateObj2.getUTCSeconds().toString() %>  
+                        <div id="sunrise-label" class="side-label">Sunrise</div>
+                        <div id="sunrise-value" class="side-value"><%= hours1 %>:<%= mins1 %>:<%= secs1 %></div>
+                    </div>
+                    <div id="sunset" class="side-info">
+                        <div id="sunset-label" class="side-label">Sunset</div>
+                        <div id="sunset-value" class="side-value"><%= hours2 %>:<%= mins2 %>:<%= secs2 %></div>
+                    </div>
                 </div>
-                <div id="sunset" class="side-info">
-                    <div id="sunset-label" class="side-label">Sunset</div>
-                    <div id="sunset-value" class="side-value"><%= hours2 %>:<%= mins2 %>:<%= secs2 %></div>
-                </div>
-            </div>
-            <div id="container-7" class="side-info-container">
-                <div id="timezone" class="side-info">
-                    <% let timeUTC=weather.timezone/3600 %>
-                    <% let sign=timeUTC>=0?'+':'' %>  
-                    <div id="timezone-label" class="side-label">Time zone</div>
-                    <div id="timezone-value" class="side-value"><%= sign %>  <%= timeUTC%> UTC</div>
+                <div id="container-7" class="side-info-container">
+                    <div id="timezone" class="side-info">
+                        <% let timeUTC=weather.timezone/3600 %>
+                        <% let sign=timeUTC>=0?'+':'' %>  
+                        <div id="timezone-label" class="side-label">Time zone</div>
+                        <div id="timezone-value" class="side-value"><%= sign %>  <%= timeUTC%> UTC</div>
+                    </div>
                 </div>
             </div>
         </div>    
