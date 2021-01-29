@@ -1,4 +1,10 @@
 
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap');
+:root{
+    --font-chakra: 'Chakra Petch', sans-serif;
+}
+
 body{
     background-color: white;
 }
@@ -21,6 +27,7 @@ header{
     background-color: darkgreen;
     width: 60%;
     margin: 4px;
+    font-family: var(--font-chakra);
     font-size: 3rem;
 }
 #search-container{
@@ -86,6 +93,7 @@ header{
     margin: 2px;
     padding: 5px 10px;
     width: 100%;
+    font-family: var(--font-chakra);
     font-size: 3rem;
     justify-content: center;
     align-items: center;
@@ -97,6 +105,7 @@ header{
     padding: 5px 5px;
     width: 100%;
     align-items: center;
+    font-family: var(--font-chakra);
     font-size: 2rem;
 }
 #weather-summary-container{
@@ -148,6 +157,7 @@ header{
     background-color: chartreuse;
     margin: 2px;
     width: 100%;
+    font-family: var(--font-chakra);
     font-size: 9rem;
 }
 #temp-unit{
@@ -156,6 +166,7 @@ header{
     background-color: chartreuse;
     margin: 2px;
     width: 60%;
+    font-family: var(--font-chakra);
     font-size: 2rem;
 }
 #min-max-temp{
@@ -166,6 +177,7 @@ header{
     height: 30%;
     width: 100%;
     margin: 2px;
+    font-family: var(--font-chakra);
     font-size: 2rem;
 }
 #weather-description-container{
@@ -175,6 +187,7 @@ header{
     margin: 2px;
     text-align: center;
     padding: 5px 10px;
+    font-family: var(--font-chakra);
     font-size: 3rem;
 }
 #weather-icon{
@@ -194,6 +207,8 @@ header{
     width: 100%;
     margin: 3px;
     padding: 5px 5px;
+    font-family: var(--font-chakra);
+    font-size: 2.5rem;
 }
 #side-container{
     display: flex;
@@ -229,7 +244,8 @@ header{
     background-color: darkgrey;
     width: 100%;
     margin: 3px;
-    font-size: 1.8rem;
+    font-family: var(--font-chakra);
+    font-size: 1.5rem;
 }
 .side-value{
     display: flex;
@@ -238,6 +254,7 @@ header{
     background-color: darkgray;
     width: 100%;
     margin: 3px;
+    font-family: var(--font-chakra);
     font-size: 1.2rem;
 }
 /* FOOTER */
