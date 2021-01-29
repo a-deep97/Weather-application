@@ -2,6 +2,7 @@ const express = require('express')
 
 const app =express();
 const request=require('request')
+const bodyparser=require('body-parser')
 
 app.set('view engine','ejs')
 
@@ -9,18 +10,17 @@ app.set('view engine','ejs')
 app.use(express.static('public'))
 app.use('/css',express.static(__dirname+'public/css'))
 app.use('/img',express.static(__dirname+'public/img'))
+app.use(bodyparser.urlencoded({extended:false}))
+app.use(bodyparser.json())
 
 
-
-
-var city='delhi'
-var url= `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=271d1234d3f497eed5b1d80a07b3fcd1`;
+var city='mumbai'
 
 app.get('/',(req,res)=>{
-    
+
+    var url= `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=271d1234d3f497eed5b1d80a07b3fcd1`;
     request(url,(error,response,body)=>{
         weather_json=JSON.parse(body);
-        console.log(weather_json);
         let weather ={
             city: weather_json.name,
             country: weather_json.sys.country,
@@ -39,10 +39,15 @@ app.get('/',(req,res)=>{
             description: weather_json.weather[0].description,
             icon: weather_json.weather[0].icon
         }
-        console.log(weather);
         res.render('index',{weather:weather});
     })
 })
-
+app.get('/weather',(req,res)=>{
+    let newCity=req.query.city;
+    console.log(newCity);
+    if(newCity)
+        city=newCity;
+    res.redirect('/');
+})
 
 app.listen(8000); 

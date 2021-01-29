@@ -46,6 +46,7 @@ header{
     padding: 2px 4px;
     border-radius: 40px;
     font-size: 150%;
+    color: white;
     text-align: left;
 }
 #search-button{
