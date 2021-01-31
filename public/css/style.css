@@ -139,14 +139,6 @@ header{
     margin: 10px;
     padding: 5px 5px;
 }
-#extra-container{
-    display: flex;
-    background-color: turquoise;
-    background-color: transparent;
-    width: 70%;
-    margin: 10px;
-    padding: 60px 60px;
-}
 #icon-container img{
     max-width: 100%;
     max-height: 100%;
@@ -168,7 +160,7 @@ header{
     background-color: transparent;
     height: 100%;
     margin: 2px;
-    padding: 20px 20px;
+    padding: 10px 10px;
 }
 #temperature{
     display: flex;
@@ -191,26 +183,35 @@ header{
 }
 #temp-unit{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     background-color: chartreuse;
     background-color: var(--textbackground-white);
+    padding: 2px 10px;
     margin: 2px;
-    width: 60%;
+    width: 40%;
     color: var(--font-color-white);
     color: var(--font-color-black);
     font-family: var(--font-chakra);
     font-size: 3rem;
 }
+#unit-converter{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    height: 20%;
+    padding: 2px 10px;
+    margin: 5px;
+    background-color: blue;
+}
+ 
 #min-max-temp{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     background-color: tomato;
     background-color: var(--textbackground-white);
     height: 30%;
     width: 100%;
-    padding: 0px 25px;
-    margin: 2px;
     color: var(--font-color-black);
     font-family: var(--font-chakra);
     font-size: 2rem;
@@ -250,6 +251,14 @@ header{
     color: var(--font-color-black);
     font-family: var(--font-chakra);
     font-size: 2.5rem;
+}
+#extra-container{
+    display: flex;
+    background-color: turquoise;
+    background-color: transparent;
+    width: 60%;
+    margin: 5px;
+    padding: 0px 0px;
 }
 #side-container{
     display: flex;
