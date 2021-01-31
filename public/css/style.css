@@ -3,7 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap');
 :root{
     --font-chakra: 'Chakra Petch', sans-serif;
-    --font-color-white: white; 
+    --font-color-white: white;
+    --font-color-black: black;
+    --textbackground-white:  rgba(255, 255, 255, 0.3); 
 }
 
 body{
@@ -75,7 +77,7 @@ header{
 /* MAIN SECTION */
 #main-section{
     background-color: gray;
-    background: url('../img/background/globe-night.jpg');
+    background: url('../img/background/climate-change-3.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -106,12 +108,12 @@ header{
 }
 #name-container{
     background-color: yellowgreen;
-    background-color: transparent;
+    background-color: var(--textbackground-white);
     display: flex;
     margin: 2px;
     padding: 5px 10px;
     width: 100%;
-    color: var(--font-color-white);
+    color: var(--font-color-black);
     font-family: var(--font-chakra);
     font-size: 3rem;
     justify-content: center;
@@ -120,12 +122,12 @@ header{
 #date-container{
     display: flex;
     background-color: yellowgreen;
-    background-color: transparent;
+    background-color: var(--textbackground-white);
     margin: 2px;
     padding: 5px 5px;
     width: 100%;
     align-items: center;
-    color: var(--font-color-white);
+    color: var(--font-color-black);
     font-family: var(--font-chakra);
     font-size: 2rem;
 }
@@ -180,10 +182,10 @@ header{
 #temp-value{
     display: flex;
     justify-content:center;
-    background-color: chartreuse;
-    background-color: transparent;
+    background-color: var(--textbackground-white);
     margin: 2px;
     width: 100%;
+    color: var(--font-color-black);
     font-family: var(--font-chakra);
     font-size: 9rem;
 }
@@ -191,10 +193,11 @@ header{
     display: flex;
     justify-content: flex-start;
     background-color: chartreuse;
-    background-color: transparent;
+    background-color: var(--textbackground-white);
     margin: 2px;
     width: 60%;
     color: var(--font-color-white);
+    color: var(--font-color-black);
     font-family: var(--font-chakra);
     font-size: 3rem;
 }
@@ -203,24 +206,24 @@ header{
     justify-content: flex-start;
     align-items: center;
     background-color: tomato;
-    background-color: transparent;
+    background-color: var(--textbackground-white);
     height: 30%;
     width: 100%;
     padding: 0px 25px;
     margin: 2px;
-    color: var(--font-color-white);
+    color: var(--font-color-black);
     font-family: var(--font-chakra);
     font-size: 2rem;
 }
 #weather-description-container{
     display: flex;
+    justify-content: flex-start;
     background-color: springgreen;
     background-color: transparent;
-    height: 70%;
+    height: 30%;
     margin: 2px;
     text-align: center;
     padding: 5px 10px;
-    color: var(--font-color-white);
     font-family: var(--font-chakra);
     font-size: 3rem;
 }
@@ -238,11 +241,13 @@ header{
 }
 #weather-description{
     display: flex;
+    justify-content: flex-start;
     background-color: darkkhaki;
-    background-color: transparent;
+    background-color: var(--textbackground-white);
     width: 100%;
     margin: 3px;
     padding: 5px 5px;
+    color: var(--font-color-black);
     font-family: var(--font-chakra);
     font-size: 2.5rem;
 }
@@ -262,6 +267,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--textbackground-white);
     border-radius: 20px;
     border: 3px solid white;
     height: 100%;
@@ -293,7 +299,7 @@ header{
     background-color: transparent;
     width: 100%;
     margin: 3px;
-    color: var(--font-color-white);
+    color: var(--font-color-black);
     font-family: var(--font-chakra);
     font-size: 1.5rem;
 }
@@ -305,7 +311,7 @@ header{
     background-color: transparent;
     width: 100%;
     margin: 3px;
-    color: var(--font-color-white);
+    color: var(--font-color-black);
     font-family: var(--font-chakra);
     font-size: 1.2rem;
 }
